@@ -1,2 +1,8 @@
+In Action
+=========
 See the released content at http://tsapp.tiddlyspace.com/
 
+Next Steps
+==========
+Make the content be retrieved from tiddlers, extracting the 
+rendered content, just for sake of example.
