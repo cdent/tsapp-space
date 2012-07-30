@@ -1,0 +1,106 @@
+html {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: "helvetica neue";
+    width: 75%;
+    margin: 1em auto auto auto;
+    box-shadow: rgba(0,0,0,0.25) 2px 2px 2px 2px;
+    padding: 0 1em 1em 1em;
+    min-height: 90%;
+}
+
+pre, code, tt {
+    font-size: 110%;
+    font-family: monospace;
+}
+
+p {
+    padding-bottom: 1em;
+}
+
+pre {
+    padding: .5em;
+    white-space:pre;
+}
+
+h1, h2 {
+    color: #B8B6BD;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+.title {
+    text-align: center;
+    clear: both;
+}
+
+h1.title {
+    font-size: 3em;
+    text-shadow: rgba(0,0,0,0.25) 2px 2px 2px;
+    margin-bottom: 1em;
+}
+
+dl {
+    margin-top: 1em;
+}
+
+h2 + p {
+    padding-top: 1em;
+}
+
+dt {
+    float: left;
+    text-align: center;
+    padding: 0 1em 0 1em;
+    margin-right: .5em;
+    border-radius: 5px 5px 0 0;
+    border-top: thin solid #DCE7F1;
+    border-left: thin solid #DCE7F1;
+    border-right: thin solid #DCE7F1;
+    cursor: pointer;
+    position: relative;
+    line-height: 2em;
+}
+
+dt.selected {
+    background: #DCE7F1;
+}
+
+dd {
+    background: #DCE7F1;
+    border-radius: 0 5px 5px 5px;
+    display: none;
+    float: right;
+    width: 100%;
+    margin: 2em 0 0 -100%;
+    position: relative;
+}
+
+#footer {
+    padding-top: 5em;
+    clear: both;
+    text-align: right;
+    font-size: .75em;
+}
+
+dd > div {
+    padding: 1em;
+    height: 5em;
+    min-height: 5em;
+    overflow-y: scroll;
+}
+
+dd.selected {
+    display: block;
+}
+

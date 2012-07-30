@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tsapp</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="/bags/common/tiddlers/reset.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="/bags/tsapp_public/tiddlers/tsapp.css" />
+    </head>
+    <body>
+        <h1 class="title">tsapp</h1>
+        <p><a href="http://github.com/cdent/tsapp">tsapp</a> is a
+        command line tool for creating browser-based applications
+        that use <a href="http://tiddlyspace.com">TiddlySpace</a> as
+        the host for content and data. It was used to create this
+        page. To see the source of the tsapp directory that was
+        created visit the <a
+            href="http://github.com/cdent/tsapp-space">GitHub
+            repo</a>.</p>
+        <p>If you have a working Python installation you can
+        install or upgrade with <code>pip install -U tsapp</code>.
+        See the <a href="http://github.com/cdent/tsapp">tsapp
+            repo</a> for more details.</p>
+
+        <h2 class="title">Commands</h2>
+        <dl class="tabs">
+            <dt class="selected">init</dt>
+            <dd class="selected">
+            <div>
+            <p>Create the directory and stub files for a new
+            app.</p>
+            <pre>
+tsapp init &lt;directory name&gt;
+            </pre>
+            </div>
+            </dd>
+            <dt>auth</dt>
+            <dd>
+            <div>
+            <p>Authenticate the provided user against the
+            target_server.</p>
+            <pre>
+tsapp auth &lt;username&gt;
+            </pre>
+            </div>
+            </dd>
+            <dt>push</dt>
+            <dd>
+            <div>
+            <p>Push the assets to the target server, into the
+            target_bag. If the bag doesn't end in
+            <code>_public</code> or <code>_private</code> then
+            <code>_public</code> will be aded.</p>
+            <pre>
+tsapp push &lt;target_bag&gt;
+            </pre>
+            </div></dd>
+            <dt>serve</dt>
+            <dd>
+            <div>
+            <p>Run a WSGI server that proxies requests looking both
+            locally and on the target server for resources.</p>
+            <pre>
+tsap serve
+            </pre>
+            </div>
+            </dd>
+            <dt>delete</dt>
+            <dd>
+            <div>
+            <p>Delete a single tiddler from a bag on the target
+            server.</p>
+            <pre>
+tsap delete &lt;bag_name&gt; &lt;tiddler_title&gt;
+            </pre>
+            </div>
+        </dl>
+        <h2 class="title">Configuration</h2>
+        <p>tsapp looks for a <code>.tsapp</code> configuration file in the
+        current user's <code>$HOME</code> and in the current
+        directory. <code>$HOME/.tsapp</code> overrides defaults and 
+        <code>./.tsapp</code> overrides <code>$HOME/.tsapp`</code>.
+        <dl class="tabs">
+            <dt class="selected">target_server</dt>
+            <dd class="selected">
+            <div>
+            <p>The default server where content will be pushed and
+            proxied.</p>
+            <p>Default is <code>http://tiddlyspace.com</code>.</p>
+            </div>
+            </dd>
+            <dt>local_host</dt>
+            <dd>
+            <div>
+            <p>The hostname of IP to which to bind the local
+            proxy.</p>
+            <p>Default is <code>0.0.0.0</code>.</p>
+            </div>
+            </dd>
+            <dt>port</dt>
+            <dd>
+            <div>
+            <p>The port to which to bind the local
+            proxy.</p>
+            <p>Default is <code>8080</code>.</p>
+            </div>
+            </dd>
+            <dt>auth_token</dt>
+            <dd>
+            <div>
+            <p>Authentication secret for accessing private resources
+            on the target server. Fill by the <code>auth</code>.</p>
+            </div>
+            </dd>
+        </dl>
+    </div>
+        </dl>
+        <div id="footer"><p>From <a
+                href="http://cdent.tiddlyspace.com/">@cdent</a></p>
+        </div>
+        <script src="/bags/common/tiddlers/jquery.js"></script>
+        <script
+            src="/bags/tsapp_public/tiddlers/tsappinfo.js"></script>
+    </body>
+</html>
