@@ -1,0 +1,3 @@
+type: text/x-markdown
+
+The port to which to bind the local proxy. Default is `8080`.

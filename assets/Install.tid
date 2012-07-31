@@ -1,0 +1,11 @@
+type: text/x-markdown
+
+tsapp is a Python 2 based tool. You will need a Python installation (2.5
+and above). `pip` is used for installation. If you don't have pip you can
+learn how to get it [here](http://www.pip-installer.org/).
+
+```
+pip install -U tsapp
+```
+
+Once installed the `tsapp` script should be on your `$PATH`.

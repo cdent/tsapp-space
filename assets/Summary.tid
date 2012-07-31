@@ -1,0 +1,10 @@
+type: text/x-markdown
+
+tsapp provides a tool, `tsapp`, for creating browser-based applications
+for use with [TiddlySpace](http://tiddlyspace.com/). Such applications are
+made of one or more html files along with one or more CSS and JavaScript
+files for presenting and access the tiddler data that lives in TiddlySpace.
+
+The combination can be very useful for rapid development of web applications
+that need a persistent but simple data store with a clean, robust API.
+

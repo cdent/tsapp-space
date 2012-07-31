@@ -1,0 +1,9 @@
+type: text/x-markdown
+
+`tsapp` provides a single script that takes multiple commands. Running 
+`tsapp help` will list the relevant commands. The following lists 
+available commands. Those commands which are not yet completed are marked
+with `TBC`.
+
+Note that the commands are designed to allow easy creation of aliases and
+to otherwise be combined in a useful fashion using the shell.

@@ -1,0 +1,8 @@
+type: text/x-markdown
+
+`tsapp init <app name>`
+
+Create an app directory named whatever you give you for `<app name>`. 
+Inside the directory will be a stub `index.html` file and an assets
+directory. `index.html` is used as the primary access page of your
+app. JavaScript, CSS, and other files go in assets.

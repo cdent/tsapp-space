@@ -1,0 +1,16 @@
+type: text/x-markdown
+
+`tsapp serve`
+
+Run a local web server that will serve up your HTML file and other assets.
+Any assets which are not found locally will be looked for at the target
+TiddlySpace server (see configuration below). Paths to
+`/bags/<somebag>/tiddlers/<sometiddler>` will first try to load
+`assets/<sometiddler>` locally. If that is not found, then the original
+path will be looked up on the TiddlySpace server.
+
+The proxy server will always send `PUT`, `POST` and `DELETE` requests
+to the target server.
+
+The goal with this arrangement is to allow the local files to not have
+to change when pushed to the target server for eventual hosting.

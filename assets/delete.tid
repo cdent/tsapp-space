@@ -1,0 +1,6 @@
+type: text/x-markdown
+
+`tsapp delete <bag name> <tiddler title>`
+
+A convenience method for removing a tiddler that's ended up on the
+server that is no longer needed and may be in the way.

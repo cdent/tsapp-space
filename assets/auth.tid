@@ -1,0 +1,6 @@
+type: text/x-markdown
+
+`tsapp auth <username>`
+
+Authenticate to the target_server as username and write the resulting
+auth token to the local directory's configuration file.

@@ -1,0 +1,4 @@
+type: text/x-markdown
+
+The URL (without trailing `/`) of the home tiddlyspace server. Defaults to
+`http://tiddlyspace.com`.
