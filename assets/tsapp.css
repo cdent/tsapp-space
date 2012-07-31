@@ -95,8 +95,8 @@ dd {
 
 dd > div {
     padding: 1em;
-    height: 5em;
-    min-height: 5em;
+    height: 8em;
+    min-height: 8em;
     overflow-y: scroll;
 }
 
