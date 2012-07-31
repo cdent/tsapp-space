@@ -5,7 +5,7 @@ $(function() {
         $(this).siblings().removeClass('selected').end()
         .next('dd').andSelf().addClass('selected');
 
-        currentDL = $(this);
+        var currentDL = $(this);
 
         var tiddler = $(this).text();
         $.ajax({
