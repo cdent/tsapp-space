@@ -1,9 +1,11 @@
 html {
     height: 100%;
     position: relative;
+    background: #F0F4F8;
 }
 
 body {
+    background: white;
     font-family: "helvetica neue";
     width: 75%;
     margin: 1em auto auto auto;
