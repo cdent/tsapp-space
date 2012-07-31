@@ -1,13 +1,15 @@
 // technique found at
 // http://www.splashnology.com/article/making-tabs-with/309/
 $(function() {
+    "use strict";
+
     $('dl.tabs dt').click(function() {
         $(this).siblings().removeClass('selected').end()
-        .next('dd').andSelf().addClass('selected');
+            .next('dd').andSelf().addClass('selected');
 
-        var currentDL = $(this);
+        var currentDL = $(this),
+            tiddler = $(this).text();
 
-        var tiddler = $(this).text();
         $.ajax({
             url: '/bags/tsapp_public/tiddlers/' + tiddler + '.json?render=1',
             success: function(data) {
@@ -16,5 +18,6 @@ $(function() {
             }
         });
     });
+
     $('dl dt:first-child').click();
 });
