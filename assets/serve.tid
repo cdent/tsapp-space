@@ -1,4 +1,10 @@
+creator: cdent
+created: 20120731131143
+modifier: cdent
+modified: 20130512170751
+tags: 
 type: text/x-markdown
+_hash: 653dc740eed518ffc842b78c1ee3a855e47e251b
 
 `tsapp serve`
 
@@ -14,3 +20,7 @@ to the target server.
 
 The goal with this arrangement is to allow the local files to not have
 to change when pushed to the target server for eventual hosting.
+
+If "wsgi_server" is set in config the value is taken as a module
+containing a function "start_server" which, when passed the config
+will start a server.
