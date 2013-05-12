@@ -21,6 +21,6 @@ to the target server.
 The goal with this arrangement is to allow the local files to not have
 to change when pushed to the target server for eventual hosting.
 
-If "wsgi_server" is set in config the value is taken as a module
-containing a function "start_server" which, when passed the config
+If `wsgi_server` is set in config the value is taken as a module
+containing a function `start_server` which, when passed the config
 will start a server.
