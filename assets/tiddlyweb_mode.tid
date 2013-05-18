@@ -1,0 +1,4 @@
+type: text/x-markdown
+
+If set to True, tsapp does not append `_public` or `_private` to a bag when
+pushing assets.

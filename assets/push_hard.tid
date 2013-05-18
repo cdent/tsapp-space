@@ -4,7 +4,8 @@ type: text/x-markdown
 
 Push (via HTTP `PUT`) all the local assets to the target server, in the
 bag named by `<bag name>`. If the bag does not end with `_private` or
-`_public`, then `_public` will be appended.
+`_public`, then `_public` will be appended. The exception to this is if
+`tiddlyweb_mode` is set to True in config.
 
 This command is distinct from `push` in that the target file on the
 server is deleted before the `PUT`.
